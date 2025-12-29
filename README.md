@@ -29,24 +29,14 @@ Additional bridge table `InterestLog` is used to model many-to-many relationship
 <img width="627" height="511" alt="Screenshot 2025-12-29 at 22 20 49" src="https://github.com/user-attachments/assets/56b8826b-87bd-46d1-a631-5d2980912f52" />
 
 ## 📁 Repository Structure
-`database_setup/` SQL scripts and sample data used to create and populate the databases.
 
-- `CreatingDB.sql` & `CreatingWarehouse.sql` Creates the source database **dataWarehouses** and data warehouse **AdCampaign2DB**
-
-- `T1.sql`, `T2.sql` Bulk insert scripts for two different timestamps (used to simulate data changes)
-
-- `mydata/` Sample *.csv* files used for data loading
-
-- `TASK4/` SQL scripts for performance verification of the data warehouse
-
-`data_generators/` Python scripts used to generate test data, simulating two timestamps.
-
-`BI_project/` Microsoft SQL Server BI solution created in **Visual Studio**.
-
-- `Task4corrected/` Multidimensional cube, contains measures and KPIs for advertising campaign analysis
-
-- `LoadETL/` Responsible for loading data into the data warehouse
-
-- `ETL/` SQL scripts for: extraction, transformation and loading data from source database **dataWarehouses** to warehouse **AdCampaign2DB**
-
-- `MDX_All_Queries.mdx` 11 MDX queries. Used for analytical reporting and cube validation
+* **`database_setup/`** — SQL scripts and sample data.
+    * `CreatingDB.sql` & `CreatingWarehouse.sql`: Creates the source database **dataWarehouses** and data warehouse **AdCampaign2DB**.
+    * `T1.sql`, `T2.sql`: Bulk insert scripts to simulate data changes over time.
+    * `TASK4/`: Performance verification and indexing scripts.
+* **`data_generators/`** — **Python** scripts used to generate synthetic test data.
+* **`BI_project/`** — The core Microsoft BI solution (**Visual Studio**).
+    * `LoadETL/`: Responsible for loading data into the data warehouse.
+    * `Task4corrected/`: Multidimensional cube with defined measures and KPIs.
+    * `ETL/`: SQL scripts for: extraction, transformation and loading data from source database **dataWarehouses** to warehouse **AdCampaign2DB**.
+    * `MDX_All_Queries.mdx`: 11 analytical queries used for cube validation and reporting.
