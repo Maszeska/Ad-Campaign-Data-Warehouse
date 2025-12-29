@@ -5,13 +5,12 @@ _A Business Intelligence solution for tracking and analyzing advertising campaig
 
 This project demonstrates a full-cycle BI implementation: from **Source Database design** and **synthetic data generation** to **ETL processes**, **OLAP Cube development**, and **interactive Dashboarding**.
 
-## 📊 Data Visualization (Tableau Public)
-In addition to Microsoft BI tools, this project includes interactive dashboards created in Tableau Public, built on top of the data warehouse.
+🛠️ **Tech Stack: Microsoft BI (SSIS, SSAS), SQL Server, Python, Tableau.**
 
-🔗 Tableau Public Dashboards:
-https://public.tableau.com/app/profile/marta.dubowik/viz/ADCampaign_17487224929940/KPIProfitDifference05 
+🔗 **Tableau Public Dashboards** (analysis of advertising performance and key business metrics derived from the warehouse):
 
-The dashboards support analysis of advertising performance and key business metrics derived from the warehouse.
+[![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=Tableau&logoColor=white)](https://public.tableau.com/app/profile/marta.dubowik/viz/ADCampaign_17487224929940/KPIProfitDifference05)
+  
 
 ## 🗄️ Data Model Overview
 ### Source Database(OLTP) 
